@@ -29,6 +29,7 @@ const Navbar = () => {
             src={Logo}
             alt="tiktik"
             layout="responsive"
+            priority
           />
         </div>
       </Link>
