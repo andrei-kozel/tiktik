@@ -8,8 +8,8 @@ export default async function handler(
 ) {
   if (req.method === "GET") {
     const { id } = req.query;
-    const query = postDetailQuery(id);
+    const query = postDetailQuery(id as string);
     const data = await client.fetch(query);
-    return res.status(200).json(data[0]);
+    res.status(200).json(data[0]);
   }
 }
